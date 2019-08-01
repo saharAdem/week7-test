@@ -14,14 +14,11 @@
             <a href="#" class="brand-logo">Cities</a>
         </div>
     </nav>
-
-        <button type="submit" name="button">
-                <a href="/signup" class="brand-logo">Signup</a>
-                </button>
-        <button type="submit" name="button">
-                <a href="/login" class="brand-logo">login</a>
-                </button>
-
+    <form class="form" action="/add-city" method="post">
+        <input type="text" name="name" value="" placeholder="name">
+        <input type="text" name="country" value="" placeholder="country">
+        <button type="submit">+ Add city</button>
+    </form>
 </body>
 
 </html>

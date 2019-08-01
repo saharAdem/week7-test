@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" type="text/css" href="./public/style.css" />
+ <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+ <title>Password Hashing Workshop</title>
+</head>
+
+<body>
+ <section class="signup">
+   <h1>Sign up</h1>
+   <form class="signup__form" method="post" action="/signup">
+     <label for="email">Email:
+       <input id="email" type="email" name="email" required/>
+     </label>
+     <label for="password">Password:
+       <input id="password" type="password" name="password" required/>
+     </label>
+     <label for="confirmPassword">Confirm password:
+       <input id="confirmPassword" type="password" required/>
+     </label>
+     <p class="error" aria-live="polite"></p>
+     <button type="submit">Submit</button>
+   </form>
+ </section>
+</body>
+
+</html>
