@@ -4,13 +4,11 @@
 
 ### Tasks:
 
+This test build up on the week 6 test, where only signed in user will be able to add a city and get the cities.
 
 
+#### Setting the project
 *In this task you need to restructure the database because we are going to change the user schema, follow these steps to get it done. If you stucked in one of them ask any of the mentors
-
-
-
-#### Setting the test
 
 - clone this repo
 - create `config.env` file
