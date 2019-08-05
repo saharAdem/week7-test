@@ -1,10 +1,7 @@
-
-
-
 BEGIN;
 
-    DROP TABLE IF EXISTS city
-    CASCADE;
+  DROP TABLE IF EXISTS city , users CASCADE;
+
 
 CREATE TABLE city
 (
@@ -17,9 +14,16 @@ INSERT INTO city
     (name,country)
 VALUES
     ('Jerusalem', 'Palestine'),
-    ('Haifa','Palestine')
+    ('Haifa','Palestine'),
     ('Gaza', 'Palestine');
 
 
+create table users
+(
+  id serial primary key,
+  email varchar(100) not null unique,
+  password varchar(100) not null
+  
+);
 
 COMMIT;
